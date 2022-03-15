@@ -1,0 +1,9 @@
+
+namespace Weblang\Test
+
+view PageView {
+
+    @model(Weblang\Test\PageModel)
+    @template("template/page_view.html")
+    
+}

@@ -1,0 +1,16 @@
+/** 
+ * Firewall rule to protect login page against brute fore attacks. This is just example 
+ * @author Vaclovas Lapinskis
+*/
+
+namespace Weblang\Test
+
+firewall LoginBruteForceProtection {
+
+    @urlPattern("/login") // login page url
+    @httpMethod("POST") // Http method Post is used to send login credentials
+    @countInterval(300) // login attempts interval 300 seconds
+    @maxAllowedCount(10) // allow only 10 user login attempts
+    @action("Action_403Status", 3600) // block access to login for 1 hour
+
+}

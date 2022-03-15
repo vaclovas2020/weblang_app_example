@@ -1,0 +1,13 @@
+namespace Weblang\Test
+
+repository PageRepository {
+
+    @driver(config("dbDriver"), config("mongo.connectionString"), config("mongo.pageRepo.collectionName"))
+    @name("Page")
+    @model(Weblang\Test\PageModel)
+    @crud({
+        "Admin":"CreateOne,CreateAll,ReadOne,ReadAll,UpdateOne,UpdateAll,DeleteOne,DeleteAll"
+        "Guest":"ReadOne"
+    })
+    
+}

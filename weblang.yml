@@ -1,0 +1,16 @@
+version: 0.6
+
+project: 
+  name: Weblang test application
+  version: 0.0.1
+  directories:
+    sourceDir: web/src
+    bytecodeDir: web/generated
+
+config:
+- name: mongo.connectionString
+  value: mongodb://localhost
+- name: mongo.pageRepo.collectionName
+  value: pages
+- name: dbDriver
+  value: mongo

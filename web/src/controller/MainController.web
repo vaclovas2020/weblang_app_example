@@ -1,0 +1,19 @@
+
+namespace Weblang\Test
+
+controller MainController {
+    
+    @repository(Weblang\Test\PageRepository)
+    @view(Weblang\Test\PageView)
+    @cms(Weblang\Test\PageCms)
+
+    func @crud("Guest") Index(pageSlug: String) {
+        $page = @repository.readOne({slug: pageSlug})
+        @view.loadView($page)
+        printLog("Loaded page %page%",{"page":$page.slug})
+    }
+
+    func @crud("Admin") CmsPage(cmsParams: String) {
+        @cms.loadAdminView(cmsParams)
+    }
+}

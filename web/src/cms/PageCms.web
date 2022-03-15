@@ -1,0 +1,9 @@
+
+namespace Weblang\Test
+
+cms PageCms{
+
+    @repository(Weblang\Test\PageRepository)
+    @crudUser("Admin")
+    
+}

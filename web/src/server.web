@@ -1,0 +1,15 @@
+/**
+ * Main server class
+ * @author Vaclovas Lapinskis
+ */
+
+namespace Weblang\Test
+
+server MainServer {
+
+    @router(Weblang\Test\MainRouter) // router class
+    @port(4423) // port
+    @host("localhost")
+    @staticFiles("web/static")
+    
+}

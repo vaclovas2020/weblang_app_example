@@ -1,0 +1,9 @@
+
+namespace Weblang\Test
+
+router MainRouter {
+
+    @route("/:pageSlug", Weblang\Test\MainController::Index)
+    @routeCms("/admin/page/:cmsParams", Weblang\Test\MainController::CmsPage)
+    
+}
