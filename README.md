@@ -1,6 +1,6 @@
 # Example Weblang web application for testing Weblang CLI 
 
-This is Weblang program for testing weblang programming language and Weblang CLI
+This is Weblang program for testing Weblang programming language and Weblang CLI
 Please use for testing purposes only.
 
 1. Add GPG public key:
