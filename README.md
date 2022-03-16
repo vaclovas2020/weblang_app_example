@@ -20,5 +20,5 @@ sudo apt update && sudo apt install weblang
 
 4. Run application with command:
 ```sh
-weblang run web/src web/generated
+weblang run
 ```
