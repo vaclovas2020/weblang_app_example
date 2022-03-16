@@ -15,7 +15,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/webla
 
 3. Update apt list and install weblang package:
 ```sh
-apt update && apt install weblang
+sudo apt update && sudo apt install weblang
 ```
 
 4. Run application with command:
